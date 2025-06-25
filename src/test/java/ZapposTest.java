@@ -33,11 +33,11 @@ public class ZapposTest {
     @BeforeClass
     public void setup() {
         // Set path to your local chromedriver.exe
-        System.setProperty("webdriver.chrome.driver", "C:/Users/Sufax/Desktop/zappos/chrome/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "../../../chrome/chromedriver.exe");
 
         // Setup ChromeOptions to point to portable Chromium
         ChromeOptions options = new ChromeOptions();
-        options.setBinary(new File("C:/Users/Sufax/Desktop/zappos/chrome/chrome-win/chrome.exe"));  // Path to portable Chromium
+        options.setBinary(new File("../../../chrome/chrome-win/chrome.exe"));  // Path to portable Chromium
         options.addArguments("--remote-allow-origins=*"); // Optional to fix common errors
         options.addArguments("--start-maximized");
 
